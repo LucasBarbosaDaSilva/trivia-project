@@ -69,6 +69,7 @@ class Login extends Component {
               id="email"
               onChange={ this.handleChange }
               className="email-input"
+              autoComplete="false"
             />
           </label>
           <div className="btn-inputs">

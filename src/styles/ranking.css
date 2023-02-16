@@ -6,12 +6,11 @@ body {
 
 p {
   font-family: monospace;
-  font-size: larger;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
 }
 
-#link {
+.link {
   align-items: center;
   background-color: #1b2f31;
   border-radius: 50px;
@@ -28,31 +27,31 @@ p {
   width: 8em;
 }
 
-#ranking-page {
+.ranking-page {
+  align-items: center;
   background-color: rgb(124, 123, 122);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
   text-align: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
-#image { 
+.image {
   border-radius: 50%;
-max-height: 130px;
-max-width: 130px;
-padding: 20px;
+  max-height: 130px;
+  max-width: 130px;
+  padding: 20px;
 }
 
 h2 {
   color: azure;
   font-family: monospace;
   font-size: 50px;
-  
+
 }
 
-#ranking-header {
+.ranking-header {
   align-items: center;
   background-color: rgb(31, 29, 29);
   color: azure;
@@ -66,21 +65,21 @@ h2 {
 .score {
   font-size: 30px;
   padding: 20px;
+
   /* background-color: aliceblue; */
 }
 
-#ranking-results {
-  
-  display: flex;
+.ranking-results {
   align-items: center;
+  display: flex;
   flex-direction: column;
- 
+
 }
 
-#results {
-  margin: 20px;
-  background-color:rgba(52, 49, 49, 0.392) ;
-  padding: 15px;
+.results {
+  background-color: rgba(52, 49, 49, 0.392);
   border: solid black 2px;
   border-radius: 20px;
+  margin: 20px;
+  padding: 15px;
 }

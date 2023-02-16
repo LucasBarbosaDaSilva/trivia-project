@@ -15,17 +15,17 @@ export default class Ranking extends Component {
   render() {
     const { rankings } = this.state;
     return (
-      <div data-testid="ranking-title" id="ranking-page">
-        <div id="ranking-header">
+      <div data-testid="ranking-title" className="ranking-page">
+        <div className="ranking-header">
           <h2>Ranking</h2>
         </div>
-        <div id="ranking-results">
+        <div className="ranking-results">
 
           {rankings.sort((a, b) => b.score - a.score)
             .map((ranking, index) => (
-              <div key={ index } id="results">
+              <div key={ index } className="results">
                 <p data-testid={ `player-name-${index}` }>{ ranking.name }</p>
-                <img src={ ranking.image } alt={ ranking.name } id="image" />
+                <img src={ ranking.image } alt={ ranking.name } className="image" />
                 <p
                   data-testid={ `player-score-${index}` }
                   className="score"
@@ -37,7 +37,7 @@ export default class Ranking extends Component {
             ))}
         </div>
         <Link
-          id="link"
+          className="link"
           to="/"
           data-testid="btn-go-home"
         >
